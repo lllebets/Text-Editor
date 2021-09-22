@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HW_16-Text-read</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="all-conteiner">
+    <div class="containet-text">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="wrapper-btn-edit_style">
+      <button type="button" class="btn btn-warning">edit</button>
+      <button type="button" class="btn btn-info">style</button>
+    </div>
+    <div class="container-edit">
+      <div class="edit-text">
+        <textarea class="form-control text_area" rows="8"></textarea>
+        <button type="button" class="btn btn-danger">add</button>
+        <button type="button" class="btn btn-success save">save</button>
+      </div>
+      <div class="edit-style">
+        <div class="wrapper-form-style">
+          <form class="form-style">
+            <p class="title_style">Font Size:</p>
+            <label>
+              <input type="radio" name="size" value="12px" />
+              12px
+            </label>
+            <label>
+              <input type="radio" name="size" value="14px" />
+              14px
+            </label>
+            <label>
+              <input type="radio" name="size" value="16px" />
+              16px
+            </label>
+            <label>
+              <input type="radio" name="size" value="18px" />
+              18px
+            </label>
+            <label>
+              <input type="radio" name="size" value="20px" />
+              20px
+            </label>
+            <p class="title_style">Font Family:</p>
+            <select name="font" class="custom-select w-50">
+              <option selected disabled>Сhoose opinion</option>
+              <option value="cursive">cursive</option>
+              <option value="fantasy">fantasy</option>
+              <option value="monospace">monospase</option>
+              <option value="sans-serif">sens-serif</option>
+            </select>
+            <p class="title_style">Colors:</p>
+            <button class="btn btn-secondary btn-color-text">
+              Color of Text
+            </button>
+            <button class="btn btn-secondary btn-color-background">
+              Background color
+            </button>
+            <p class="title_style">Style:</p>
+            <label>
+              <input type="checkbox" name="stylee" value="bold" />
+              Bold text
+            </label>
+            <label>
+              <input type="checkbox" name="stylee" value="cursive" />
+              Cursive text
+            </label>
+          </form>
+        </div>
+        <div class="wrapper_color">
+          <div class="box_color aquamarine"></div>
+          <div class="box_color brown"></div>
+          <div class="box_color black"></div>
+          <div class="box_color green"></div>
+          <div class="box_color gray"></div>
+          <div class="box_color red"></div>
+          <div class="box_color blue"></div>
+          <div class="box_color purple"></div>
+          <div class="box_color darkolivegreen"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-add_table_or_list">
+    <h2>Choose what you want:</h2>
+    <form class="choice_table_list">
+      <label>
+        <input type="radio" name="table_list" value="table" />
+        table
+      </label>
+      <label>
+        <input type="radio" name="table_list" value="list" />
+        list
+      </label>
+    </form>
+    <div class="add_table">
+      <form class="form-table">
+        <div class="cont-tr">
+          <p>Count TR:</p>
+          <input type="text" name="table-tr" class="form-control w-75" />
+        </div>
+        <div class="cont-td">
+          <p>Count TD:</p>
+          <input type="text" name="table-td" class="form-control w-75" />
+        </div>
+        <h5>Add style to your table:</h5>
+        <div class="width-td">
+          <p>Width of TD:</p>
+          <input type="text" name="width-td" class="form-control w-75" />
+        </div>
+        <div class="height-td">
+          <p>Height of TD:</p>
+          <input type="text" name="height-td" class="form-control w-75" />
+        </div>
+        <div class="border-table">
+          <p>Width of border:</p>
+          <input type="text" name="width-border" class="form-control" />
+          <p>Type of border:</p>
+          <select name="type-border" class="custom-select">
+            <option value="solid" selected>solid</option>
+            <option value="dashed">dashed</option>
+            <option value="double">double</option>
+            <option value="dotted">dotted</option>
+          </select>
+          <p>Color of border:</p>
+          <select name="color-border" class="custom-select">
+            <option value="black" selected>black</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+          </select>
+        </div>
+        <button class="btn btn-success cerate-table">Create table</button>
+      </form>
+    </div>
+
+    <div class="add_list">
+      <form class="form-list">
+        <div class="cont-li">
+          <p>Count Li:</p>
+          <input type="text" name="count-li" class="form-control w-75" />
+        </div>
+        <div class="type-li">
+          <p>Type of marks:</p>
+          <select name="type-li" class="custom-select w-75">
+            <option value="square" selected>square</option>
+            <option value="disc">disc</option>
+            <option value="circle">circle</option>
+          </select>
+      </form>
+    </div>
+    <button class="btn btn btn-success cerate-list">Create list</button>
+  </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
